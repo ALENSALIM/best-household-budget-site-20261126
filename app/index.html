@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hearth Ledger — A calmer month, on one page</title>
+  <meta name="description" content="Hearth Ledger is a household budget site for the Marlowe family: a dashboard, a full ledger, category budgets, savings goals and a month-to-month comparison.">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="main.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">⌂</span>
+        <div>
+          <span class="brand-name">Hearth Ledger</span>
+          <span class="brand-tag">A calmer month, on one page.</span>
+        </div>
+      </div>
+      <div class="header-controls">
+        <label class="month-picker-label">Month
+          <select id="month-picker" aria-label="Choose month"></select>
+        </label>
+        <button type="button" class="reset-btn" data-action="reset">Reset demo data</button>
+      </div>
+    </div>
+    <nav class="site-nav" aria-label="Sections">
+      <a class="nav-link" href="#/">Dashboard</a>
+      <a class="nav-link" href="#/transactions">Transactions</a>
+      <a class="nav-link" href="#/budgets">Budgets</a>
+      <a class="nav-link" href="#/goals">Goals</a>
+      <a class="nav-link" href="#/compare">Compare</a>
+    </nav>
+  </header>
+
+  <main id="view"></main>
+
+  <footer class="site-footer">
+    <p>Hearth Ledger — a household budget site for the Marlowe family. All figures are example data stored in this browser; nothing leaves your device.</p>
+  </footer>
+</body>
+</html>
